@@ -6,22 +6,22 @@ files:
 permissions:
   - object: /
     pattern: "**"
-    owner: app
-    group: app
+    owner: iot
+    group: iot
 hooks:
   ApplicationStop:
     - location: scripts/ApplicationStop.sh
       timeout: 60
-      runas: app
+      runas: iot
   BeforeInstall:
     - location: scripts/BeforeInstall.sh
       timeout: 300
-      runas: app
+      runas: iot
   AfterInstall:
     - location: scripts/AfterInstall.sh
       timeout: 300
-      runas: app
+      runas: iot
   ApplicationStart:
     - location: scripts/ApplicationStart.sh
       timeout: 60
-      runas: app
+      runas: iot
