@@ -4,5 +4,5 @@ AWS + Raspberry Pi application coded with Nodejs.
 This application uses a bunch of AWS services connected to a Raspberry Pi and a doorSensor switch.
 
 
-Door Sensor Notification are sent using AWS SNS and data is storage in AWS DynamoDB
+Door Sensor Notification are sent using AWS SNS and data is storage in AWS DynamoDB.
 
