@@ -11,11 +11,11 @@ The project starts with a fork from perinei/Door-Alarm-Pi. After that, new adjus
 
 The project comprehends two main processes/flows:
 
-DoorSensor's notifications are reflected to the Raspberry Pi and published using AWS SNS. The IoT device status is sent to subscribed cellphones, and the sensor's data is stored in AWS DynamoDB for future recovery through the provided WebServer interface.
+1. DoorSensor's notifications are reflected to the Raspberry Pi and published using AWS SNS. The IoT device status is sent to subscribed cellphones, and the sensor's data is stored in AWS DynamoDB for future recovery through the provided WebServer interface.
 
 ![Raspberry Pi & DoorSensor Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/Raspberry_Pi_plus_DoorSensor_Flow.png?raw=true)
 
-WebServer instance using AWS EC2 providing a user interface to AWS Lambda code that consumes API (through AWS API Gateway), and retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
+2. WebServer instance using AWS EC2 providing a user interface to AWS Lambda code that consumes API (through AWS API Gateway), and retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
 
 ![AWS EC2 WebServer Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/AWS_EC2_WebServer_Flow.png?raw=true)
 
