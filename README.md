@@ -9,14 +9,14 @@ The project starts with a fork from perinei/Door-Alarm-Pi. After that, new adjus
 
 ## Main Flows
 
-The project comprehends to main processes/flows:
+The project comprehends two main processes/flows:
 
 DoorSensor's notifications are reflected to the Raspberry Pi and published using AWS SNS. The IoT device status is sent to subscribed cellphones, and the sensor's data is stored in AWS DynamoDB for future recovery through the provided WebServer interface.
 
 ![Raspberry Pi & DoorSensor Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/Raspberry_Pi_plus_DoorSensor_Flow.png?raw=true)
 
-WebServer instance using AWS EC2 providing user interface to AWS Lambda code that consumes API (through AWS API Gateway), and retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
+WebServer instance using AWS EC2 providing a user interface to AWS Lambda code that consumes API (through AWS API Gateway), and retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
 
 ![AWS EC2 WebServer Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/AWS_EC2_WebServer_Flow.png?raw=true)
 
-The codes of both Flows are kept in GitHub. AWS CodePipeline is used to monitor updates to the code repositories and call ASW CodeDeploy to automatically fire the new deployment to its respective production server (Rapsberry Pi and/or AWS EC2 WebServer instance).
+The codes of both Flows are kept in GitHub. AWS CodePipeline is used to monitor updates to the code repositories and call ASW CodeDeploy to automatically fire the new deployment to its respective production server (Raspberry Pi and/or AWS EC2 WebServer instance).
