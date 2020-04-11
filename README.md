@@ -1,11 +1,11 @@
 # AWS IoT & Raspberry Pi
 AWS + Raspberry Pi application coded with Nodejs.
 ## Description
-This project uses a bunch of AWS services connected to a Raspberry Pi and a doorSensor switch, exploring IoT scenarios with topics being published/subscribed, and actions automaticaly lunched in response to sensors status. It also implements flows of Continuous Delivery and Continuous Deployment of the application's codes, automaticaly updating the production versions running on both, a Raspberry Pi server and an AWS EC2 Webserver instance.
+This project uses a bunch of AWS services connected to a Raspberry Pi and a doorSensor switch, exploring IoT scenarios with topics being published/subscribed, and actions automaticaly lunched in response to the sensor's status. It also implements flows of Continuous Delivery and Continuous Deployment of the application's codes, automaticaly updating the production versions running on both, the Raspberry Pi server and the AWS EC2 Webserver instance.
 
 ![AWS Services](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/aws%20services.png?raw=true)
 
-The project starts with a fork from perinei/Door-Alarm-Pi. After that, new adjusts and customizations will complement the application design and implementation.
+The project starts with a fork from perinei/Door-Alarm-Pi. After that, new adjusts and customizations will complement the application's design and implementation.
 
 ## Main Flows
 
