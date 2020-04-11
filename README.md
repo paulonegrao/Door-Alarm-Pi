@@ -13,7 +13,7 @@ The project comprehends to main processes/flows:
 
 Door Sensor notifications are sent using AWS SNS and data is stored in AWS DynamoDB.
 
-![Raspberry Pi & DoorSensor Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/Raspberry_PI_plus_DoorSensor_Flow.png?raw=true)
+![Raspberry Pi & DoorSensor Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/Raspberry_Pi_plus_DoorSensor_Flow.png?raw=true)
 
 WebServer instance using AWS EC2 providing user interface to AWS Lambda code that consumes API (through AWS API Gateway), and retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
 
