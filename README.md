@@ -15,8 +15,8 @@ The project comprehends two main processes/flows:
 
 ![Raspberry Pi & DoorSensor Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/Raspberry_Pi_plus_DoorSensor_Flow.png?raw=true)
 
-2. WebServer instance using AWS EC2 providing a user interface to AWS Lambda code that consumes API (through AWS API Gateway), and retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
+2. This flow implements a WebServer instance using AWS EC2. It provides a web user interface that fetches dedicated API (through AWS API Gateway), and fires an AWS Lambda code which retrives data/status from AWS DynamoDB about the IoT device (DoorSensor).
 
 ![AWS EC2 WebServer Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/AWS_EC2_WebServer_Flow.png?raw=true)
 
-The codes of both Flows are kept in GitHub. AWS CodePipeline is used to monitor updates to the code repositories and call ASW CodeDeploy to automatically fire the new deployment to its respective production server (Raspberry Pi and/or AWS EC2 WebServer instance).
+The codes of both Flows are kept in GitHub repositories. AWS CodePipeline is used to monitor updates to the codes' repositories and call ASW CodeDeploy to automatically launch new deployment process to its respective production server (Raspberry Pi and/or AWS EC2 WebServer instance).
