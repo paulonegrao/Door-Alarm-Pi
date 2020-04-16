@@ -5,7 +5,7 @@ This project uses a bunch of AWS services connected to a Raspberry Pi and a door
 
 ![AWS Services](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/aws%20services.png?raw=true)
 
-The project starts with a fork from perinei/Door-Alarm-Pi. After that, new adjusts and customizations will complement the application's design and implementation.
+The project starts with a fork from perinei/Door-Alarm-Pi. After that, new incorporations and customizations will complement the application's design and implementation.
 
 ## Main Flows
 
@@ -19,4 +19,4 @@ The project comprehends two main processes/flows:
 
 ![AWS EC2 WebServer Flow](https://github.com/paulonegrao/aws-iot-raspberry-pi/blob/master/images/AWS_EC2_WebServer_Flow.png?raw=true)
 
-The codes of both Flows are kept in GitHub repositories. AWS CodePipeline is used to monitor updates to the codes' repositories and call ASW CodeDeploy to automatically launch new deployment process to its respective production server (Raspberry Pi and/or AWS EC2 WebServer instance).
+The codes of both Flows are kept in GitHub repositories. AWS CodePipeline is used to monitor updates to the codes' repositories and call AWS CodeDeploy to automatically launch new deployment process to its respective production server (Raspberry Pi and/or AWS EC2 WebServer instance).
