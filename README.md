@@ -1,5 +1,6 @@
 # AWS IoT & Raspberry Pi
-AWS + Raspberry Pi application coded with Nodejs.
+AWS + Raspberry Pi application coded in Nodejs and JavaSript. It uses sensors to fire predefined actions ang control IoT scenario. The application's codes are also automatically deployded to the servers. 
+
 ## Description
 This project uses a bunch of AWS services connected to a Raspberry Pi and a doorSensor switch, exploring IoT scenarios with topics being published/subscribed, and actions automaticaly lunched in response to the sensor's status. It also implements flows of Continuous Delivery and Continuous Deployment of the application's codes, automaticaly updating the production versions running on both, the Raspberry Pi server and the AWS EC2 Webserver instance.
 
